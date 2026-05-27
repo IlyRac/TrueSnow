@@ -52,7 +52,7 @@ public class SnowyAtmosphereSound extends AbstractTickableSoundInstance {
                 this.stop();
             }
         } else {
-            float maxVolume = 0.20f;
+            float maxVolume = 0.30f;
             if (this.volume < maxVolume) {
                 this.volume += 0.005f;
             }

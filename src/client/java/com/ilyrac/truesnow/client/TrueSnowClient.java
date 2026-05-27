@@ -98,13 +98,13 @@ public class TrueSnowClient implements ClientModInitializer {
 
                     boolean isTargetPlant =
 							state.is(Blocks.POPPY)
-									|| state.is(Blocks.DANDELION)
-									|| state.is(Blocks.BUSH)
-									|| state.is(Blocks.BROWN_MUSHROOM)
-									|| state.is(Blocks.RED_MUSHROOM)
-									|| state.is(Blocks.SUGAR_CANE)
-									|| state.is(Blocks.FIREFLY_BUSH)
-									|| state.is(Blocks.SWEET_BERRY_BUSH);
+							|| state.is(Blocks.DANDELION)
+							|| state.is(Blocks.BUSH)
+							|| state.is(Blocks.BROWN_MUSHROOM)
+							|| state.is(Blocks.RED_MUSHROOM)
+							|| state.is(Blocks.SUGAR_CANE)
+							|| state.is(Blocks.FIREFLY_BUSH)
+							|| state.is(Blocks.SWEET_BERRY_BUSH);
 
 					if (isTargetPlant) {
 						return new SnowyPlantModel(model, TrueSnowClient::isStrictWinterBiome);
