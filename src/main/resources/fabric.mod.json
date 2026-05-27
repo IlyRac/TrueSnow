@@ -3,15 +3,19 @@
 	"id": "truesnow",
 	"version": "${version}",
 	"name": "TrueSnow",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "An immersive vanilla enhancement mod, that finally makes cold biomes make sense.",
 	"authors": [
-		"Me!"
+		"IlyRac"
 	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	"custom": {
+		"modmenu": {
+			"links": {
+				"Enjoying the mod? Support me!": "https://ko-fi.com/ilyrac",
+				"License": "https://github.com/IlyRac/TrueSnow/blob/main/LICENSE.md"
+			}
+		}
 	},
-	"license": "CC0-1.0",
+	"license": "IlyRac License",
 	"icon": "assets/truesnow/icon.png",
 	"environment": "*",
 	"entrypoints": {
