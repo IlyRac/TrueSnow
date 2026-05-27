@@ -3,6 +3,7 @@
 	"package": "com.ilyrac.truesnow.client.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"client": [
+		"TrueSnowSoundMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
