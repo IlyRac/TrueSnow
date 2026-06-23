@@ -115,8 +115,8 @@ public class TrueSnowClient implements ClientModInitializer {
 
 		// Built-in resource pack priority loader remains intact
 		FabricLoader.getInstance().getModContainer("truesnow").ifPresent(modContainer -> {
-			//noinspection deprecation
-			ResourceManagerHelper.registerBuiltinResourcePack(
+            //noinspection deprecation
+            ResourceManagerHelper.registerBuiltinResourcePack(
 					Identifier.fromNamespaceAndPath("truesnow", "truesnow_overlays"),
 					modContainer,
 					Component.literal("TrueSnow Overlays"),
