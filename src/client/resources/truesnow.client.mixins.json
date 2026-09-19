@@ -3,7 +3,10 @@
 	"package": "com.ilyrac.truesnow.client.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"client": [
-		"TrueSnowSoundMixin"
+		"TrueSnowSoundMixin",
+		"SnowyAtmosphericFogMixin",
+		"SkyRendererMixin",
+		"CloudRendererMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
