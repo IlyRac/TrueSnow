@@ -2,8 +2,7 @@ package com.ilyrac.truesnow.client.sound;
 
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.client.resources.sounds.AbstractTickableSoundInstance;
-import net.minecraft.resources.Identifier;
-import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 
 public class SnowyAtmosphereSound extends AbstractTickableSoundInstance {
@@ -14,8 +13,7 @@ public class SnowyAtmosphereSound extends AbstractTickableSoundInstance {
 
     public SnowyAtmosphereSound(LocalPlayer player, int durationTicks) {
         super(
-                SoundEvent.createVariableRangeEvent(Identifier.fromNamespaceAndPath(
-                        "minecraft", "ambient.soul_sand_valley.loop")),
+                SoundEvents.AMBIENT_SOUL_SAND_VALLEY_LOOP.value(),
                 SoundSource.AMBIENT,
                 player.getRandom()
         );
@@ -24,7 +22,7 @@ public class SnowyAtmosphereSound extends AbstractTickableSoundInstance {
         this.looping = true;
         this.delay = 0;
 
-        this.volume = 0.01f;
+        this.volume = 0.05f;
         this.pitch = 0.60f;
 
         this.relative = true;
@@ -52,9 +50,9 @@ public class SnowyAtmosphereSound extends AbstractTickableSoundInstance {
                 this.stop();
             }
         } else {
-            float maxVolume = 0.30f;
+            float maxVolume = 0.95f;
             if (this.volume < maxVolume) {
-                this.volume += 0.005f;
+                this.volume += 0.01f;
             }
         }
     }
